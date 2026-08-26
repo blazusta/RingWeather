@@ -1,0 +1,34 @@
+# =================================================================
+# .GITIGNORE SYNTAX CHEAT SHEET
+# =================================================================
+# [ # ] : Used for comments. Git will ignore these lines.
+# [ / ] : Trailing slash means "ignore this entire directory".
+# [ * ] : Asterisk (Wildcard) means "match any name/string".
+# [ . ] : A dot at the start just means it's a "hidden" file/folder.
+# =================================================================
+
+# 1. Virtual Environments
+# Ignore the hidden directory containing Python's virtual environment
+.venv/
+
+# 2. Editor and IDE Files
+# Ignore hidden VS Code settings and workspace configurations
+.vscode/
+*.code-workspace
+
+# 3. Compiled Files and Build Outputs
+# Ignore the directory containing your generated .exe application
+executable/
+# Ignore Python's cached bytecode directories
+__pycache__/
+# Ignore ALL files ending with .spec, regardless of their file name
+*.spec
+
+# 4. Sensitive Data and Local Logs
+# Ignore specific files inside the 'data' folder to protect API keys and user data
+data/api_key.txt
+data/user_logs.csv
+data/settings.json
+
+# 5. Personal Notes
+version2.0.txt
