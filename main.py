@@ -19,6 +19,8 @@ try:
         api_key = file.read()
 except FileNotFoundError:
     print(f"[ERROR]: API key was not found.\n")
+    input("\nEnter anything to continue... ")
+
     sys.exit()
 
 # -----------------------------------------------------------------
