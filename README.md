@@ -40,9 +40,8 @@ A Python-based CLI tool that helps users track their wake-up routines. It acts a
    ```
 3. **API Key Setup**
    * Get a free API key from https://openweathermap.org/
-   * Navigate to the `data/` folder.
-   * Rename `api_key_example.txt` to `api_key.txt`.
-   * Paste your actual API key inside it and save.
+   * Rename `.env.example` to `.env`.
+   * Put your actual API key inside it and save.
 4. **Run The Program**
     ```bash
     python main.py
@@ -55,6 +54,7 @@ RingWeather/
 ├── README.md                 
 ├── requirements.txt
 ├── .gitignore
+├── .env.example
 │
 ├── modules/                 
 │   ├── __init__.py           
@@ -64,8 +64,7 @@ RingWeather/
 │
 ├── data/                     
 │   ├── settings.json       
-│   ├── user_logs.csv          
-│   └── api_key_example.txt
+│   └── user_logs.csv          
 │
 └── assets/                   
     ├── Alarm1.mp3      

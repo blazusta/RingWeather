@@ -11,17 +11,21 @@ from modules import weather_api as wapi
 from modules import alarm
 from modules import storage
 import threading, os, sys, time, msvcrt
+from dotenv import load_dotenv
 # -----------------------------------------------------------------
+ 
+# Searches for the .env file and injects
+# its key-value pairs into the temporary process environment.
+load_dotenv() 
 
-# Reading the weather API key
-try:
-    with open(file="data/api_key.txt", mode="r") as file:
-        api_key = file.read()
-except FileNotFoundError:
-    print(f"[ERROR]: API key was not found.\n")
+# Retrieves the environment variable's value, 
+# returns None if the key is not found.
+api_key = os.getenv("WEATHER_API_KEY") 
+
+if not api_key:
+    print("Error: API Key not found!")
     input("\nEnter anything to continue... ")
-
-    sys.exit()
+    exit()
 
 # -----------------------------------------------------------------
 

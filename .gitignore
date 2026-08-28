@@ -27,7 +27,7 @@ __pycache__/
 
 # 4. Sensitive Data and Local Logs
 # Ignore specific files inside the 'data' folder to protect API keys and user data
-data/api_key.txt
+.env
 data/user_logs.csv
 data/settings.json
 
