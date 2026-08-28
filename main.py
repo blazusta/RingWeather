@@ -25,7 +25,7 @@ api_key = os.getenv("WEATHER_API_KEY")
 if not api_key:
     print("Error: API Key not found!")
     input("\nEnter anything to continue... ")
-    exit()
+    sys.exit()
 
 # -----------------------------------------------------------------
 
