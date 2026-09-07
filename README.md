@@ -53,6 +53,7 @@ RingWeather/
 ├── main.py                   
 ├── README.md                 
 ├── requirements.txt
+├── LICENSE
 ├── .gitignore
 ├── .env.example
 │

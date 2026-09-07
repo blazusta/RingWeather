@@ -19,7 +19,7 @@
 # 3. Compiled Files and Build Outputs
 # Ignore the directory containing your generated .exe application
 RingWeather_v1.0/
-*.zip
+releases/
 # Ignore Python's cached bytecode directories
 __pycache__/
 # Ignore ALL files ending with .spec, regardless of their file name
